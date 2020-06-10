@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form class="m-5">
+    <div class="row w-25">
+        <div class="col">
+        <label for="inputname">Nombre</label>
+          <input type="text" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="col">
+            <label for="inputname">Apellidos</label>
+            <input type="text" class="form-control" placeholder="Apellidos">
+        </div>
+    </div>
+      <br>
+    <div class="row w-25">
+        <div class="col">
+            <label for="exampleFormControlInput1">Correo electronico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="col">
+            <label for="inputname">Telefono de contacto</label>
+            <input type="text" class="form-control" placeholder="Nº tfno">
+        </div>
+    </div>
+   
+    <div class="form-group w-50 d-inline-block ml-n5 p-5">
+      <label for="exampleFormControlTextarea1">Mensaje</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="card d-inline-block" style="width: 18rem;">
+        <div class="card-header">
+            Para más ayuda
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">689543126</li>
+          <li class="list-group-item">698754123</li>
+          <li class="list-group-item">tukturia@gmail.com</li>
+        </ul>
+    </div>
+  </form>
+
+
+<br>
+<button type="button" class="btn btn-lg btn-block btn-primary w-25 m-5 mt-n3">Enviar</button>
+{% endblock %}
